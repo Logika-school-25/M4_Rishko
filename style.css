@@ -1,35 +1,78 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset='UTF-8'>
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class='container start'>
-        <h3 class="container_h3"></h3>
-        <div class='start-btn'>Почати</div>
-         <div class='start-btn'>знайти правильну кнопку! </div>
-        <div class='start-btn'>Почати</div>
-        <div class='start-btn'>Почати</div>
-         <div class='start-btn'>Почати</div>
-    </div>
-    <div class='container main'>
-        <div class='question'>2 + 2</div>
-        <div class='ans-row'>
-            <div class='answer'>4</div>
-            <div class='answer'>6</div>
-            <div class='answer'>10</div>
-            <div class='answer'>500</div>
-            <div class='answer'>500</div>
-        </div>
-    </div>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 
-    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
-    <script src="script.js"></script>
-</body>
+body {
+    font-family: 'firefox', sans-serif;
+    /* font-family: ; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+     background: rgb(255, 230, 0); 
+}
 
-</html>
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main {
+    display: none;
+}
+
+
+.question {
+    font-size: 6em;
+}
+
+
+.ans-row {
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+.answer {
+    border: 1px solid rgb(251, 255, 0);
+    border-radius: 5px;
+    width: 65px; height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin: .5em;
+    cursor: pointer;
+}
+
+
+.answer:hover {
+    background: #ffff00;
+}
+
+
+.container_h3{
+    margin-bottom: 10px;
+}
+
+
+.start-btn {
+    font-size: 30px;
+    padding: .5em;
+    border: 1px solid rgba(0, 0, 0, 0.815);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.start-btn:hover {
+    background: #ffff00;
+}
